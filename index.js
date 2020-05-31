@@ -4,10 +4,10 @@ const app=express();
 // app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({extended:false}));
 
-app.get('/',(req,res)=>{
+/*app.get('/',(req,res)=>{
     res.send("<h1>simple calculator</h1>");
-})
-app.get('/cal',(req,res)=>{
+})*/
+app.get('/',(req,res)=>{
     res.sendFile(`${__dirname}/index.html`);
 })
 app.post('/cal',(req,res)=>{
